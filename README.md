@@ -27,7 +27,7 @@ READMEを読むための、とても小さなプログラムです。
 make install
 ```
 
-デフォルトでは `/usr/local/bin` にインストールされます。変更するには：
+デフォルトでは `$(HOME)/.local/bin` にインストールされます。変更するには：
 
 ```sh
 make install PREFIX=/usr/local/bin
@@ -85,7 +85,8 @@ Makefileを詳しく見るのも、この README を読んでください。
 
 ## Windows
 
-MinGW / MinGW-w64 または clang for Windows でも同じソースコードをコンパイルできます：
+MinGW / MinGW-w64 または clang for Windows でも同じソースコードをコンパイルできます。
+ただし Makefile は 修正が必要かもしれません。
 
 ```sh
 mingw32-make
@@ -93,30 +94,12 @@ mingw32-make
 
 `install` ターゲットは Windows では必須ではありません。
 
-## Contributing
+## このプロジェクトの目的
 
-このプロジェクトの目的は、OSS 開発の敷居を下げることです。
+次が、このプロジェクトの目的です。
 
-- OSS 初心者を歓迎します
-- 小さな修正でも歓迎します
-- README の誤字修正も立派な Pull Request です
-- ドキュメント改善も貢献です
-- Issue を作るだけでもプロジェクトへの参加です
-- コードを書いたことがなくても歓迎します
-
-「コードを書かなければ OSS に貢献できない」という印象を与えたくないからです。
-
-## Good First Issues
-
-最初の Pull Request にぴったりの課題です：
-
-- README の誤字を1つ修正する
-- README の文章を改善する
-- README を別の言語へ翻訳する
-- エラーメッセージを改善する
-- テストケースを1つ追加する
-- ヘルプメッセージを改善する
-- README に面白い一文を追加する
+- OSS 開発の敷居を下げること
+- 「難しいコードを書かなければ OSS に貢献できない」という印象をなくすこと
 
 ## License
 

@@ -1,6 +1,6 @@
 CC      ?= cc
 CFLAGS  ?= -std=c11 -Wall -Wextra -Wpedantic
-PREFIX  ?= /usr/local
+PREFIX  ?= $(HOME)/.local
 
 TARGET  = readme-cli
 SRC     = src/main.c
